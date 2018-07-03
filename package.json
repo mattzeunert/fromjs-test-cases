@@ -1,0 +1,22 @@
+{
+  "name": "fromjs-test-cases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattzeunert/fromjs-test-cases.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattzeunert/fromjs-test-cases/issues"
+  },
+  "homepage": "https://github.com/mattzeunert/fromjs-test-cases#readme",
+  "dependencies": {
+    "node-http-server": "^8.1.2"
+  }
+}
