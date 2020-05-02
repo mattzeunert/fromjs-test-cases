@@ -6,24 +6,7 @@
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 	</head>
-	<body>
-		<script>
-			if (localStorage["todo-backbone"] === undefined) {
-				localStorage.setItem("todos-backbone", "97f67d88-8aae-1909-d5e0-7d1dab7a98fa")
-				localStorage.setItem("todos-backbone-97f67d88-8aae-1909-d5e0-7d1dab7a98fa", '{"title":"Do something","order":1,"completed":false,"id":"97f67d88-8aae-1909-d5e0-7d1dab7a98fa"}')
-			}
-
-			const startTime = new Date();
-			setTimeout(check, 50)
-			function check() {
-				if (document.querySelectorAll(".todo-list li").length === 2) {
-					const endTime = new Date();
-					console.log("Done in", (endTime.valueOf() - startTime.valueOf())/1000, "s")
-				} else {
-					setTimeout(check, 50)
-				}
-			}
-		</script>
+	<body>		
 		<section class="todoapp">
 			<header class="header">
 				<h1>todos</h1>
@@ -65,6 +48,23 @@
 			<% if (completed) { %>
 			<button class="clear-completed">Clear completed</button>
 			<% } %>
+		</script>
+		<script>
+			if (localStorage["todo-backbone"] === undefined) {
+				localStorage.setItem("todos-backbone", "97f67d88-8aae-1909-d5e0-7d1dab7a98fa")
+				localStorage.setItem("todos-backbone-97f67d88-8aae-1909-d5e0-7d1dab7a98fa", '{"title":"Do something","order":1,"completed":false,"id":"97f67d88-8aae-1909-d5e0-7d1dab7a98fa"}')
+			}
+
+			const startTime = new Date();
+			setTimeout(check, 50)
+			function check() {
+				if (document.querySelectorAll(".todo-list li").length === 2) {
+					const endTime = new Date();
+					console.log("Done in", (endTime.valueOf() - startTime.valueOf())/1000, "s")
+				} else {
+					setTimeout(check, 50)
+				}
+			}
 		</script>
 		<script>
 			console.time("Load")
